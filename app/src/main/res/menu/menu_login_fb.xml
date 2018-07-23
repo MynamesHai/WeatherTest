@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/icon_search"
+        app:showAsAction="always"
+        android:title="Search"/>
+    <item android:title="Mess"
+        android:icon="@drawable/icon_mess"
+        app:showAsAction="always"
+        android:id="@+id/action_mess"/>
+    <item android:id="@+id/action_camera"
+        android:title="Camera"
+        android:icon="@drawable/icon_camera"
+        app:showAsAction="always" />
+
+</menu>

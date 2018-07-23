@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#eeeeee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.details.LoginSuccessActivity">
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:minHeight="?actionBarSize"-->
+        <!--android:id="@+id/toolbar_login"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/linear_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <ImageButton
+            android:id="@+id/btn_news_feed"
+            android:src="@drawable/icon_news_feed"
+            android:background="@drawable/cus_btn_img_bar"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize" />
+        <ImageButton
+            android:id="@+id/btn_addfr"
+            android:src="@drawable/icon_addfr"
+            android:background="@drawable/cus_btn_img_bar"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize" />
+        <ImageButton
+            android:id="@+id/btn_mess"
+            android:src="@drawable/icon_mess"
+            android:background="@drawable/cus_btn_img_bar"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize" />
+        <ImageButton
+            android:id="@+id/btn_notifition"
+            android:src="@drawable/icon_notifition"
+            android:background="@drawable/cus_btn_img_bar"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frame_fragment_login"
+        android:layout_below="@+id/linear_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:id="@+id/linear_bar"
+                android:background="#fafafa"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/btn_user"
+                        android:src="@drawable/icon_account"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                    <EditText
+                        android:background="@drawable/cus_edt"
+                        android:padding="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:id="@+id/btn_video"
+                        android:background="@drawable/cus_img_btn"
+                        android:src="@drawable/icon_video"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageButton
+                        android:id="@+id/btn_img"
+                        android:background="@drawable/cus_img_btn"
+                        android:src="@drawable/icon_img"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageButton
+                        android:id="@+id/btn_location"
+                        android:background="@drawable/cus_img_btn"
+                        android:src="@drawable/icon_local"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:background="#fafafa"
+                android:layout_below="@id/linear_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    android:text="Hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:textAllCaps="false"
+                    android:text="Play"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/btn_play"
+                    android:layout_below="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:textAllCaps="false"
+                    android:text="Stop"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/btn_play"
+                    android:id="@+id/btn_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextClock
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/btn_stop"
+                    android:id="@+id/time_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="40sp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

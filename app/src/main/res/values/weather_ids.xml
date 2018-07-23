@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weather_api_key" translatable="false">02cf68254b2e3f288d7af353e5bfd7d2</string>
+</resources>

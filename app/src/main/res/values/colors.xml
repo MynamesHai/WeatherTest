@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="scanner_line">#00ceff</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparent_while">#80FFFFFF</color>
+
+    <color name="black_alpha">#4c000000</color>
+    <color name="black">#000000</color>
+    <color name="blue">#3367D5</color>
+    <color name="dark_grey">#D1D1D1</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="status_bar">#1C3AAA</color>
+
+    <color name="black_gray">#9e9fa0</color>
+    <color name="black_semi_transparent">#B2000000</color>
+
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_border">#ffafed44</color>
+
+    <color name="blue_gray_menu_nav_background">#d2eeeeee</color>
+    <color name="blue_gray_menu_nav_title">#d2fafafa</color>
+
+    <color name="pink_click">#32ff80ab</color>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Weather padding-->
+    <dimen name="paddingTiny">4dp</dimen>
+    <dimen name="paddingSmall">8dp</dimen>
+    <dimen name="paddingMedium">12dp</dimen>
+    <dimen name="paddingLarge">16dp</dimen>
+    <dimen name="paddingHuge">24dp</dimen>
+
+    <!--Weather margin-->
+    <dimen name="marginTiny">4dp</dimen>
+    <dimen name="marginSmall">8dp</dimen>
+    <dimen name="marginMedium">12dp</dimen>
+    <dimen name="marginLarge">16dp</dimen>
+    <dimen name="marginHuge">24dp</dimen>
+
+    <!--Weather textSize-->
+    <dimen name="textDefault">16sp</dimen>
+    <dimen name="textTitle">18sp</dimen>
+
+    <!--Navigation Menu-->
+    <dimen name="nav_menu_item">48dp</dimen>
+    <dimen name="navigation_drawer_width">260dp</dimen>
+</resources>

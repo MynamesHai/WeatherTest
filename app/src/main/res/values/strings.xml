@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="lbl_skip">Skip</string>
+    <string name="lbl_current_location">Current Location</string>
+    <string name="network_not_found">Network not found</string>
+
+    <string name="locations">Locations</string>
+
+</resources>

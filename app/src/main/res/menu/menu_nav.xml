@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/submenu_1"
+        android:title="Locations"/>
+    <group android:id="@+id/group_location">
+        <item android:id="@+id/m_editlocations"
+            android:title="Edit Locations"
+            android:icon="@drawable/ic_location"/>
+        <item android:id="@+id/m_curentlocations"
+            android:title="Curent Locations"
+            android:icon="@drawable/ic_location"/>
+        <item android:id="@+id/m_oradea"
+            android:title="Oradea"
+            android:icon="@drawable/ic_location"/>
+        <item android:id="@+id/m_paris"
+            android:title="Paris"
+            android:icon="@drawable/ic_location"/>
+    </group>
+
+    <item android:id="@+id/submenu_2"
+        android:title="Setting"/>
+    <group android:id="@+id/group_setting">
+        <item
+            android:id="@+id/m_unit"
+            android:icon="@drawable/ic_fog_night"
+            android:title="Unit" />
+        <item android:id="@+id/m_distance"
+            android:title="Distance"
+            android:icon="@drawable/ic_wind_mini"/>
+        <item android:id="@+id/m_notification"
+            android:title="Notification"
+            android:icon="@drawable/icon_notifition"/>
+    </group>
+
+    <item android:id="@+id/submenu_3"
+        android:title="Info"/>
+    <group android:id="@+id/group_info">
+        <item android:id="@+id/m_fedback"
+            android:title="Fedback and Suggestion"
+            android:icon="@drawable/ic_chat"/>
+        <item android:id="@+id/m_rate"
+            android:title="Rate Us"
+            android:icon="@drawable/ic_rate"/>
+        <item android:id="@+id/m_share"
+            android:title="Share App"
+            android:icon="@drawable/ic_share"/>
+        <item android:id="@+id/m_fullversion"
+            android:title="Get Full Version"
+            android:icon="@drawable/ic_location"/>
+    </group>
+</menu>

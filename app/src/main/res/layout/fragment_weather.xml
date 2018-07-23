@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/blue"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/rela_bar"
+        android:padding="@dimen/paddingTiny"
+        android:layout_margin="@dimen/marginMedium"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageButton
+            android:id="@+id/btn_home_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_menu" />
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_sunny"
+                android:id="@+id/img_home_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="Ha Noi"
+                android:id="@+id/txt_home_cityname"
+                android:layout_toRightOf="@+id/img_home_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toRightOf="@+id/img_home_weather"
+                android:layout_below="@+id/txt_home_cityname"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="Sunday, January 22"
+                android:id="@+id/txt_home_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/btn_home_add"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_add"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <!--Body-->
+    <LinearLayout
+        android:layout_marginLeft="@dimen/marginMedium"
+        android:layout_marginRight="@dimen/marginMedium"
+        android:id="@+id/linear_body"
+        android:orientation="vertical"
+        android:layout_below="@+id/rela_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_home_temp"
+                    android:textColor="@color/white"
+                    android:text="18°"
+                    android:textSize="148sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginTop="@dimen/marginSmall"
+                    android:padding="@dimen/paddingTiny"
+                    android:layout_below="@id/txt_home_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginRight="@dimen/marginTiny"
+                        android:src="@drawable/ic_wind_mini"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/txt_home_wind"
+                        android:textColor="@color/white"
+                        android:text="45km/h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_marginRight="@dimen/marginTiny"
+                        android:layout_marginLeft="@dimen/marginLarge"
+                        android:src="@drawable/ic_rain_mini"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/txt_home_state"
+                        android:textColor="@color/white"
+                        android:text="30%"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_marginRight="@dimen/marginTiny"
+                        android:layout_marginLeft="@dimen/marginLarge"
+                        android:src="@drawable/ic_fog_cloud_mini"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/txt_home_humidity"
+                        android:textColor="@color/white"
+                        android:text="70%"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/marginSmall"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rela_home_details"
+                android:layout_marginBottom="@dimen/marginSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="@dimen/marginMedium"
+                    android:id="@+id/txt_home_detail_day"
+                    android:layout_toLeftOf="@+id/txt_home_detail_hour"
+                    android:textColor="@color/white"
+                    android:text="Day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txt_home_detail_hour"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:text="Hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/rela_home_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/rela_home_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
